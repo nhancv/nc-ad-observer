@@ -1,4 +1,4 @@
-package com.nhancv.observer;
+package com.nhancv.observer.mvp.observe;
 
 import java.util.Observable;
 
@@ -6,12 +6,11 @@ import java.util.Observable;
  * Created by nhancao on 10/19/16.
  */
 
-public class MyObservable extends Observable {
-
-    public String name = "Observable";
+public class Cache extends Observable {
 
     public void changeMe(String word) {
         setChanged();
         notifyObservers(word);
     }
+
 }
